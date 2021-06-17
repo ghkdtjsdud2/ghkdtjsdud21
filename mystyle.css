@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR');
+
+/* FontAwesome 아이콘 스타일 */
+.fa {
+    text-align: center;
+    text-decoration: none;
+    margin: 0 8px;
+}
+.fa:hover {
+    color: #444444;
+}
+.fa-bars, .fa-search {
+    display: none;
+    margin: 0;
+}
+
+
+body {
+    margin: 0; padding: 0;
+    padding-top: 70px;  /* body 태그의 CSS 기본값 수정 */
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #ffffff;
+}
+h1 {
+    margin: 0; padding: 0;
+}
+a, a:link, a:hover, a:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 9998;
+     /* position이 relative인 요소를 가운데 배치하는 방법 */
+    color: #ffffff;
+    background-color: #000;
+    
+
+}
+/*width: 100%;
+height: 70px;
+margin: 0 auto;  
+color: #ffffff;
+background-color: #000;*/
+main {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+footer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 48px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+/* header 영역 스타일 */
+#logo {
+    position: fixed;
+    width: 25px;
+    margin: 0 ;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px  ;
+    /* background-color: #ffffff; */
+}
+#logo img {
+    width: 25px;  /* 로고이미지를 #logo 박스의 크기에 맞춰 표시 */
+}
+#mainmenu {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 9999;
+}
+#mainmenu > ul {
+    display: block;
+    margin: 0; padding: 0;
+    list-style-type: none;
+    
+    
+}
+#mainmenu > ul a:link,
+#mainmenu > ul a:visited
+{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+#mainmenu > ul a:hover
+{
+    color: rgb(175, 175, 175);
+}
+
+
+
+
+#mainmenu > ul li {
+    display: block;
+    
+    float: left;
+    margin-left: 4.8vw;
+    padding: 0 1vw;
+    margin-top: 1.6rem;
+    
+   
+    
+    /* background-color: #fff;
+    border: solid 1px #000; */
+}
+#mainmenu > ul li:hover {
+    /* background-color: #ffffff; */
+}
+#social {
+    position: absolute;
+    bottom: 24px;
+    right: 20px;
+}
+
+
+/* main 영역 스타일 */
+#content1 {
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/webmain.png);
+    background-size: cover;
+}
+#content1 img {
+    width: 100%;
+}
+.cta {
+    position: absolute;
+    display: inline-block;
+    width: 20vh;
+    display: block;
+    height: 35vh;
+    top: 30%;
+    background: #ffffff00;
+    left: 45%;
+
+}
+
+.cta2 {
+    position: absolute;
+    width: 20vh;
+    display: block;
+    height: 35vh;
+    top: 17%;
+    background: #ffffff00;
+    right: 52%;
+    
+    border-bottom: 0.2rem solid #ffffff;
+    animation-name: example1;
+    animation-duration: 5s;
+    
+}
+
+#ctah2 {
+    position: absolute;
+    width: 55vh;
+    display: block;
+    height: 45vh;
+    top: 44%;
+    background: #ffffff00;
+    right: 55.6%;
+    font-size: 3rem;
+    animation-name: example3;
+    animation-duration: 11s;
+    
+    
+}
+
+#ctah3 {
+    position: absolute;
+    width: 55vh;
+    display: block;
+    height: 45vh;
+    top: 43%;
+    background: #ffffff00;
+    right: 6.5%;
+    font-size: 3rem;
+    animation-name: example4;
+    animation-duration: 11s;
+    
+    
+}
+
+.cta3 {
+    position: absolute;
+    width: 20vh;
+    display: block;
+    height: 35vh;
+    top: 16.5%;
+    background: #ffffff00;
+    left: 51%;
+    border-bottom: 0.2rem solid #ffffff;
+    animation-name: example2;
+    animation-duration: 5s;
+}
+
+.cta h1 {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 20%;
+    
+    font-size: 2.0rem;
+    
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5vh;
+    width: 12vh;
+    height: 6vh;
+    margin: 0 auto;
+    background-color: #000000;
+    border-radius: 3vh;
+
+}
+.button:hover {
+    background-color: #1db954;
+}
+#content2 {
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/main2.png);
+    background-size: cover;
+}
+#content2 img {
+    width: 100%;
+}
+
+#content4 {
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-color: #666666;
+    background-image: url(images/21ss.jpg);
+    background-size: cover;
+}
+
+#content4 img {
+    width: 100%;
+}
+
+#content3 {
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/kid.jpg);
+    background-size: cover;
+}
+#content3 img {
+    width: 100%;
+}
+
+#content5 {
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/nike.jpg);
+    background-size: cover;
+    margin-top: 5vw;
+}
+#content5 img {
+    width: 100%;
+}
+
+#content6 {
+    position: relative;
+    width: 100%;
+    height: 110vw;
+    background-image: url(images/makta.jpg);
+    background-size: cover;
+    margin-top: 5vw;
+}
+#content6 img {
+    width: 100%;
+}
+
+#sports01{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/sports1.jpg);
+    background-size: cover;
+    
+   
+    
+}
+
+#sports01 img {
+    width: 100%;
+}
+
+#sports02{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/sports2.jpg);
+    background-size: cover;
+}
+
+#sports02 img {
+    width: 100%;
+}
+
+
+#sports03{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/sports3.jpg);
+    background-size: cover;
+}
+
+#sports03 img {
+    width: 100%;
+}
+
+
+#sports04{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/sports4.jpg);
+    background-size: cover;
+}
+
+#sports04 img {
+    width: 100%;
+}
+
+
+#sports05{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/sports5.jpg);
+    background-size: cover;
+}
+
+#sports05 img {
+    width: 100%;
+}
+
+
+#life01{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/life1.jpg);
+    background-size: cover;
+}
+
+#life01 img {
+    width: 100%;
+}
+
+
+#life02{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/life2.jpg);
+    background-size: cover;
+}
+
+#life02 img {
+    width: 100%;
+}
+
+#life003{
+    position: relative;
+    width: 98%;
+    height: 55vw;
+    left: 50%; transform: translateX(-50%);
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    
+}
+
+
+
+
+#life03{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/life3.jpg);
+    background-size: cover;
+}
+
+#life03 img {
+    width: 100%;
+}
+
+
+#life04{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/life4.jpg);
+    background-size: cover;
+    margin-top: 7vw;
+}
+
+#life04 img {
+    width: 100%;
+}
+
+#life05{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    background-image: url(images/life5.jpg);
+    background-size: cover;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+}
+
+#life05 img {
+    width: 100%;
+}
+
+
+
+#cta-subscribe {
+    position: relative;
+    top: 49vw;
+    left: 50%; transform: translateX(-50%);
+    width: 20vw;
+    text-align: center;
+    color: #ffffff;
+}
+#content3 input {
+    width: 480px;
+    height: 32px;
+    padding: 8px;
+    outline: none;
+}
+#about {
+    position: relative;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+    background-color: #ffffff;
+}
+#about h1 {
+    margin: 24px 0;
+}
+
+/* footer 영역 스타일 */
+#copyright {
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    font-size: 0.8em;
+    bottom: 16px;
+}
+
+
+/* 반응형 웹 구현을 위한 미디어 쿼리(media query) */
+@media screen and (max-width: 960px) {
+    header {
+        z-index: 10000;
+        position: fixed;
+        height: 56px;
+    }
+    main {
+        top: 56px; /* 모바일 버전 헤더의 높이 만큼 아래로 이동 */
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding-bottom: 7vh;
+    }
+
+    
+body {
+    margin: 0; padding: 0;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #ffffff;
+}
+
+
+    .fa-bars {
+        position: absolute;
+        display: inline-block;
+        font-size: 16px;
+        top: 20px;
+        left: 16px;
+    }
+    .fa-search {
+        position: absolute;
+        display: inline-block;
+        font-size: 16px;
+        top: 20px;
+        right: 16px;
+    }
+    #logo {
+        display: inline-block;
+        width: 20px;
+        height: 14px;
+        position: absolute;
+        top: 16px;
+        left: 50%; transform: translateX(-50%);
+        margin: 0; padding: 0;
+    }
+    #logo img {
+        width: 20px;
+    }
+    #mainmenu {
+        display: none;
+    }
+    #social {
+        display: none;
+    }
+
+    #content1 {
+        position: relative;
+        width: 100%;
+        height: 55vw;
+        background-image: url(images/webmain.png);
+        background-size: cover;
+    }
+    .cta {
+        width: 320px;
+    }
+    .cta h1 {
+        font-size: 1.5rem;
+    }
+    #cta-subscribe {
+        position: relative;
+        top: 43vw;
+        left: 50%; transform: translateX(-50%);
+        width: 20vw;
+        height: auto;
+        text-align: center;
+        color: #ffffff;
+        padding: 2vh;
+       
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 5vh;
+        width: 8vh;
+        height: 4vh;
+        margin: 0 auto;
+        background-color: #000000;
+        border-radius: 3vh;
+        font-size: 1px;
+        
+    
+    }
+
+    .cta2 {
+        position: absolute;
+        width: 10vh;
+        display: block;
+        height: 1vh;
+        top: 46%;
+        background: #ffffff00;
+        right: 54%;
+        
+        border-bottom: 0.1rem solid #ffffff;
+        animation-name: example01;
+        animation-duration: 3s;
+        
+    }
+    
+    #ctah2 {
+        position: absolute;
+        width: 1vh;
+        display: block;
+        height: 10vh;
+        top: 44%;
+        background: #ffffff00;
+        right: 90%;
+        font-size: 1.3rem;
+        animation-name: example3;
+        animation-duration: 9s;
+        
+        
+    }
+    
+    #ctah3 {
+        position: absolute;
+        width: 1vh;
+        display: block;
+        height: 10vh;
+        top: 44%;
+        background: #ffffff00;
+        right: 28%;
+        font-size: 1.3rem;
+        animation-name: example4;
+        animation-duration: 9s;
+        
+        
+    }
+    
+    .cta3 {
+        position: absolute;
+        width: 10vh;
+        display: block;
+        height: 1vh;
+        top: 46%;
+        background: #ffffff00;
+        left: 53%;
+        border-bottom: 0.1rem solid #ffffff;
+        animation-name: example02;
+        animation-duration: 3s;
+    }
+   
+    #copyright {
+        position: absolute;
+        left: 50%; transform: translateX(-50%);
+        font-size: 0.6em;
+        bottom: 16px;
+    }
+}
+@keyframes example1 {
+    from {width: 0;}
+    to {width: 20vh;}
+    
+}
+
+@keyframes example01 {
+    from {width: 0;}
+    to {width: 10vh;}
+    
+}
+
+
+@keyframes example2 {
+    from {width: 0;}
+    to {width: 20vh;}
+ 
+    
+}
+
+
+@keyframes example02 {
+    from {width: 0;}
+    to {width: 10vh;}
+ 
+    
+}
+
+@keyframes example3 {
+    from {opacity: 0;}
+    to {opacity: 100;}
+    
+}
+
+
+@keyframes example4 {
+    from {opacity: 0;}
+    to {opacity: 100;}
+    
+    
+}
+
+
+
+
+
+
